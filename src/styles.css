@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  /* background:lightgrey */
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.product {
+  position: relative;
+  width: 200px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product img {
+  width: 150px;
+  /* height: 150px; */
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: grey;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: gainsboro;
+}
+
+.popup-inner li {
+  list-style-type: none;
+}
+.popup-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/*
+.tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: -122px;
+  transform: translateX(-50%);
+  background: lemonchiffon;
+  border: 2px solid black;
+  border-radius: 5px;
+  z-index: 10;
+  font-size: 20px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-color: black transparent transparent;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+*/
