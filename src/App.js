@@ -1,5 +1,5 @@
 import "./styles.css";
-import Products from "./Products";
+import Products from "./components/Products";
 
 export default function App() {
   return (
@@ -9,5 +9,5 @@ export default function App() {
         <Products />
       </div>
     </div>
-  );
+  );  
 }
