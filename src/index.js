@@ -10,6 +10,7 @@ import { AppContextProvider } from "./utilities/context";
 import Pagination from "./components/Pagination/Pagination";
 import Comments from "./components/Nested Comments/Comments";
 import ToDoList from "./components/ToDoList/ToDoList";
+import GoogleCalendar from "./components/Calendar/GoogleCalendar";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/todolist",
     element: <ToDoList />,
+  },
+  {
+    path: "/calendar",
+    element: <GoogleCalendar />,
   },
 ]);
 root.render(
