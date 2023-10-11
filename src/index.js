@@ -9,6 +9,8 @@ import MovieDetail from "./components/MovieApp/MovieDetail";
 import { AppContextProvider } from "./utilities/context";
 import Pagination from "./components/Pagination/Pagination";
 import Comments from "./components/Nested Comments/Comments";
+import ToDoList from "./components/ToDoList/ToDoList";
+
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
@@ -40,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/nestedcomments",
     element: <Comments />,
+  },
+  {
+    path: "/todolist",
+    element: <ToDoList />,
   },
 ]);
 root.render(
