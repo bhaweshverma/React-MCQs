@@ -11,6 +11,8 @@ import Pagination from "./components/Pagination/Pagination";
 import Comments from "./components/Nested Comments/Comments";
 import ToDoList from "./components/ToDoList/ToDoList";
 import GoogleCalendar from "./components/Calendar/GoogleCalendar";
+import Humanetics from "./components/HumaneticsAssignment/Humanetics";
+import CalendarContextWrapper from "./context/CalendarContextWrapper";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -52,11 +54,17 @@ const router = createBrowserRouter([
     path: "/calendar",
     element: <GoogleCalendar />,
   },
+  {
+    path: "/humanetics",
+    element: <Humanetics />,
+  },
 ]);
 root.render(
   // <StrictMode>
-  <AppContextProvider>
-    <RouterProvider router={router} />
-  </AppContextProvider>,
+  <CalendarContextWrapper>
+    <AppContextProvider>
+      <RouterProvider router={router} />
+    </AppContextProvider>
+  </CalendarContextWrapper>,
   // </StrictMode>,
 );

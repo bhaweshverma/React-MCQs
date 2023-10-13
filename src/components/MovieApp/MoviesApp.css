@@ -6,7 +6,7 @@
 .movie-page {
   padding: 50px 100px;
 }
-.grid {
+.movie-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -14,16 +14,16 @@
   padding: 10px;
   margin: 10px;
 }
-.card-info {
+.movie-card-info {
   /* width: 100%; */
   display: flex;
   flex-direction: column;
 }
-.card-info img {
+.movie-card-info img {
   width: 200px;
   height: 300px;
 }
-.card-info h3 {
+.movie-card-info h3 {
   text-decoration: none;
 }
 .search-container {

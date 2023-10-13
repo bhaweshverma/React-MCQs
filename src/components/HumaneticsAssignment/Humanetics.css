@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  color: blue;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.sensor-container {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  animation: rotate-vertical-axis 4s linear infinite;
+}
+
+.state-signal-default {
+  stroke-width: 1px;
+}
+
+.txtState {
+  border: 2px solid black;
+}
+.hidden {
+  display: none !important;
+}
+#paraError {
+  color: red;
+}
+
+@keyframes rotate-vertical-axis1 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
